@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+h1 {
+    padding-top: 50px;
+    margin-bottom: 150px;
+}
+
+
+body {
+    font-size: 18px;
+}
+
+
+h2 {
+    width: 330px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #1c877f;
+    display: inline-block;
+}
+
+
+main section .h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+main .slogan {
+    width: 100%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 150px;
+    background-image: url(../images/c_about/bg_nami.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+}
+
+.slogan span {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    /* 垂直中心 */
+    justify-content: center;
+    /* 水平中心 */
+}
+
+.slogan span:before {
+    border-top: 3px solid;
+    content: "";
+    width: 3em;
+    /* 線の長さ */
+}
+
+.slogan span:before {
+    margin-right: 0.5em;
+    /* 文字の右隣 */
+}
+
+
+/* about---------------------- */
+main .about {
+    margin-bottom: 200px;
+}
+
+main .about p {
+    text-align: center;
+}
+
+
+/* origin--------------------- */
+main .origin .box1 {
+    background-size: cover;
+    background-position: center;
+    /*height: 630px;*/
+    height: 100%;
+    background-image: url(../images/c_about/bg1.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+
+}
+
+main .origin .box2 {
+    background-size: cover;
+    background-position: center;
+
+    /* height: 100%;*/
+    /* height: 750px;*/
+    background-image: url(../images/c_about/bg2.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+main .origin .s_box dt {
+    float: left;
+    clear: left;
+    /*    width: 100px;*/
+    width: 9.6%;
+    font-weight: bold;
+}
+
+main .origin .s_box dd {
+    /*  width: 600px;*/
+    width: 83%;
+    padding-left: 100px;
+    margin-bottom: 30px;
+}
+
+
+
+
+main .origin .s_box {
+    padding-top: 50px;
+    padding-left: 50px;
+    /*padding-right: 50px;*/
+    padding-bottom: 3%;
+    line-height: 1.5em;
+    width: 83%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.box2>p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.slogan {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+/* フェードイン時に入るクラス */
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* ---
+
+/*レスポンシブ森山追記*/
+/*追記　もりやま*/
+@media screen and (max-width:640px) {
+    .inner {
+        width: auto;
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        padding-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .slogan {
+        height: auto;
+    }
+
+    main .slogan{
+        margin-bottom: 50px;
+    }
+
+    main .about {
+        margin-bottom: 50px;
+    }
+
+    main .origin .s_box {
+        width: 90%;
+        padding-top: 2%;
+        padding-left: 0%;
+        padding-right: 0;
+    }
+
+    main .origin .s_box dd {
+        padding-left: 18%;
+        font-size: 13px;
+        margin-bottom: 5%;
+    }
+
+    .box2 {
+        margin-bottom: 20px;
+    }
+
+    .box2>p {
+        font-size: 13px;
+    }
+
+    main section .h2{
+        margin-bottom: 30px;
+    }
+
+    main section .h2 h2{
+        font-size: 20px;
+    }
+
+    main .about .text{
+        font-size: 15px;
+    }
+}

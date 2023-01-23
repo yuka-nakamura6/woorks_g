@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+h1 {
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    width: 330px;
+    font-size: 24px;
+    border-bottom: 1px solid #1c877f;
+    display: inline-block;
+}
+
+
+main section .h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* js用----------------------------- */
+.photo {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+/* フェードイン時に入るクラス */
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* ------------------------------------ */
+
+
+
+/* main */
+/* 治療の流れ(flow) */
+main .flow {
+    margin-bottom: 200px;
+}
+
+main .flow .content_flow span {
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 120px;
+}
+
+main .flow .content_flow div {
+    width: 250px;
+}
+
+main .flow .content_flow div img {
+    margin-bottom: 20px;
+    padding-left: 48px;
+}
+
+
+
+/* 治療内容(Service) */
+main section h3 {
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px solid #a6afae;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main .service ul {
+    /*width: 600px;*/
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+main .service ul li {
+    border: 1px solid;
+    width: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+main .service ul li:hover {
+    background-color: #30d5c8;
+}
+
+main .service ul li a {
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+main .service ul li a:hover {
+    color: #ffffff;
+}
+
+
+
+main .service .content_service {
+    width: 700px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+main .service .content_service .box {
+    width: 450px;
+    padding-top: 30px;
+
+}
+
+main .service .content_service .box dl {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+main .service .content_service .box dl dt {
+    width: 100px;
+    float: left;
+    clear: both;
+}
+
+main .service .content_service .box_kango {
+    width: 450px;
+    height: 300px;
+}
+
+main .service .content_service .box_kango p {
+    margin-bottom: 1.5em;
+    font-size: 14px;
+}
+
+
+main .service .text {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/*追記*/
+.ds_f2{display: flex;}
+
+/*追記　もりやま*/
+@media screen and (max-width:640px) {
+    /*.inner {
+        width: auto;
+        width: 100%;
+    }*/
+
+    /*固定のナビ部分を消します*/
+
+    .fixed_box_frame {
+        display: none;
+    }
+
+    /*固定の予約ボタンを消しています*/
+    .fixed {
+        width: 0;
+    }
+
+
+
+
+    .content_flow span {
+        display: none;
+    }
+
+    /*.content_flow {
+        padding-left: 25%;
+    }*/
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .service img {
+        display: none;
+    }
+
+    .ds_f2 {
+        flex-direction: column;
+    }
+
+    .service .ds_f{flex-direction: row;}
+
+  
+
+   /*#sec1, #sec2,#sec3,#sec4 {
+        padding-left: 5%;
+    }*/
+    /* #sec1 dl{padding-left: 15%;} */
+    #sec1 p{text-align: center;}
+    #sec2 p{text-align: center;}
+    #sec3 p{text-align: center;}
+
+    /* #sec2 dl{padding-left: 20%;} */
+
+    /* 積み重なるように配置 */
+
+    /*  .res {
+        width: 400PX;
+        box-sizing: border-box;
+    }
+
+    .order1 {
+        order: 1;
+        /*上から1番目に表示*/
+
+        h1{
+            padding: 0;
+        }
+
+        main .service .content_service{
+            width: auto;
+            margin: 0;
+            height: auto;
+        }
+
+        main .service .content_service .box{
+            width: auto;
+            padding-top: 15px;
+            font-size: 13px;
+        }
+
+        main .service .content_service .box_kango{
+            width: auto;
+            height: auto;
+        }
+
+        main .service .content_service .box_kango p{
+            font-size: 13px;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        main section .h2{
+            margin-bottom: 30px;
+        }
+
+
+
+        main .flow .content_flow div img {
+            padding: 0;
+        }
+
+        main .flow .content_flow div{
+            width: auto;
+        }
+
+        main .flow .content_flow{
+            padding: 0;
+        }
+
+
+        main .service ul{
+            width: auto;
+            margin: 0;
+        }
+
+        main .service ul li{
+            width: auto;
+        }
+
+        main .service .content_service .box dl dt{
+            width: auto;
+        }
+
+        main .flow{
+          
+            text-align: center;
+        }
+
+        main .service .content_service .box dl{
+            text-align: center;
+        }
+        
+
+        main .service .text{
+            padding-top: 50px;
+            font-size: 14px;
+            margin-bottom: 50px;
+        }
+        
+        main .service ul{
+            justify-content: space-around;
+        }
+
+   
+        main .flow  ,.content_flow>div{
+            margin-bottom: 50px;
+        }
+
+        h1{
+            margin-bottom: 50px;
+        }
+
+        main .service ul{
+            margin-bottom: 30px;
+        }
+
+        main .service ul li{
+            width: 70px;
+        }
+
+        main .service section{
+            border: 1px dotted #30d5c8;
+            padding: 10px 10px 30px 10px;
+            height: auto;
+            margin:0 10px 25px 10px;
+            box-sizing: border-box;
+        }        
+
+        main .service section h3{
+            margin-bottom: 10px;
+        }
+
+        main .service{
+            box-sizing: border-box;
+        }
+
+        #sec4{
+            margin-bottom: 0;
+        }
+
+        main .flow .content_flow{
+            font-size: 14px;
+            width: 90%;
+            margin: 0 auto;
+        }
+}
+
+.order2 {
+    order: 2;
+    /*上から2番目に表示*/
+}
+
+.order3 {
+    order: 3;
+}
+
+.order4 {
+    order: 4;
+}
+
+
+
+
+
+/*.ds_f {
+        display: block;
+    }
+
+    .main_visual .catch {
+        font-size: 1.125rem;
+        padding-top: 15px;
+        padding-bottom: 10%;
+        padding-left: 5%;
+    }
+
+    header.btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    .f_area {
+        padding-bottom: 150px;
+        width: 100%;
+    }
+
+    .f_nav {
+        display: none;
+    }*/

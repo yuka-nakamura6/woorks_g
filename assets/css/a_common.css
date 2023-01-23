@@ -1,0 +1,636 @@
+ @charset "UTF-8";
+
+ body,
+ p,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ ul,
+ ol,
+ dl,
+ dd {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+
+ body{
+    font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  }
+
+ img {
+     vertical-align: bottom;
+ }
+
+ address {
+     font-style: normal;
+ }
+
+ a {
+     color: #000;
+     text-decoration: none;
+ }
+
+ nav {
+     z-index: 9999;
+ }
+
+
+
+
+ /*- reset -*/
+ /*--------------------*/
+ body {
+     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+ }
+
+ .clearfix::after {
+     content: "";
+     display: block;
+     clear: both;
+ }
+
+ .ds_f {
+     display: flex;
+ }
+
+ .jc_sb {
+     justify-content: space-between;
+ }
+
+ .mt10 {
+     margin-top: 10px;
+ }
+
+ .pt10 {
+     padding-top: 10px;
+ }
+
+
+ .pt20 {
+     margin-bottom: 30px;
+ }
+
+ /* アクセスマップ誘導のボタン、追記しました */
+ .pt20 a {
+     border: 1px solid #30d5cb;
+     background-color: #30d5cb;
+     color: #FFF;
+     padding: 10px;
+     font-weight: bold;
+ }
+
+ /*.pt25 {
+     padding-top: 25px;
+ }*/
+
+ .pt30 {
+     padding-top: 30px;
+ }
+
+ .pt40 {
+     padding-top: 40px;
+ }
+
+ /*.pt45 {
+     padding-top: 45px;
+ }*/
+
+
+ /*.pt90 {
+     padding-top: 90px;
+ }*/
+
+ /*
+ .pt110 {
+     padding-top: 110px;
+ }*/
+
+ /*
+ .pt140 {
+     padding-top: 140px;
+ }*/
+
+
+ .pb20 {
+     padding-bottom: 20px;
+ }
+
+ .pb30 {
+     padding-bottom: 30px;
+ }
+
+ .pr35 {
+     padding-right: 35px;
+ }
+
+ .pl5 {
+     padding-left: 5px;
+ }
+
+ .pl20 {
+     padding-left: 20px;
+ }
+
+ /*.pl35 {
+     padding-left: 35px;
+     ;
+ }*/
+
+ .pl40 {
+     padding-left: 40px;
+ }
+
+ .pl60 {
+     padding-left: 60px;
+ }
+
+
+ .pl100 {
+     padding-left: 100px;
+ }
+
+ .pl200 {
+     padding-left: 200px;
+ }
+
+ .pl315 {
+     padding-left: 315px;
+ }
+
+ .fz11 {
+     font-size: 11px;
+ }
+
+ .fz20 {
+     font-size: 20px;
+     margin-bottom: 15px;
+
+ }
+
+ .fz60 {
+     font-size: 60px;
+     height: 85px;
+ }
+
+ .fz60 img {
+     height: 60px;
+     width: 60px;
+     padding-bottom: 20px;
+ }
+
+ .fz70 {
+     margin-bottom: 40px;
+ }
+
+ .fz11z {
+     font-size: 11px;
+ }
+
+ .fz65 {
+     font-size: 65px;
+ }
+
+ /*ここまでにありがちなCSSを書きました*/
+
+ .inner {
+     width: 960px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ header {
+     height: 110px;
+ }
+
+ .header_address {
+     color: #4e605d;
+     text-align: right;
+     padding-top: 20px;
+     padding-right: 55px;
+     font-size: 15px;
+ }
+
+ .header_address img {
+     width: 40px;
+     height: 40px;
+ }
+
+ .header_address span {
+     line-height: 30px;
+     font-size: 30px;
+ }
+
+ .logo_image img {
+     width: 90px;
+     height: 90px;
+ }
+
+ .logo {
+     font-size: 25px;
+     font-family: "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+     font-weight: bold;
+     padding-top: 35px;
+     padding-left: 5px;
+ }
+
+ #pc_nav {background-color: #30d5cb;
+     width: 100%;
+     height: 80px;
+     top: 0;
+     left: 0;
+ }
+
+ #fixedBox nav ul {
+     width: 960px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ /*liの幅変えてます　森山　10_7*/
+
+
+ #menu li {
+     float: left;
+     width: 150px;
+     height: 80px;
+ }
+
+ #menu li:last-child {
+     width: 210px;
+ }
+
+ #menu li a {
+     height: 80px;
+     text-align: center;
+     display: block;
+     text-decoration: none;
+     background: #30d5cb;
+
+     color: #FFF;
+     /* border-right: 1px solid #D84544; */
+     font-size: 12px;
+
+ }
+
+
+
+ #menu li a:hover {
+     background: #cfe4e3;
+ }
+
+ #menu li:last-child a {
+     border-right: none;
+ }
+
+ #menu li a span {
+     display: block;
+     /* padding-top: 25px;
+     padding-bottom: 0;*/
+     height: 8px;
+     padding-top: 20px;
+     font-size: 17px;
+     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+     font-weight: bold;
+ }
+
+ /*ul #m06{
+    font-size: 15px;
+ }*/
+
+ .fixed {z-index: 9999;
+     position: fixed;
+     /*bottom: 100px;*/
+     bottom: 50px;
+     right: 30px;
+ }
+
+ .fixed a:hover {
+     opacity: 0.6;
+ }
+
+ /*PC用--予約はこちらボタン*/
+ .fixed {
+     position: fixed;
+     /*bottom: 100px;*/
+     bottom: 1%;
+     right: 1%;
+ }
+
+ .fixed a:hover {
+     opacity: 0.6;
+ }
+
+
+ /*スマホ用--予約ボタン*/
+ .fixed_yoyaku {
+     display: none;
+ }
+
+
+ /*.fixed_yoyaku {padding-left: 10%;
+    position: fixed;
+    bottom: 20px;
+    width: 70%;
+}*/
+
+
+
+
+ /*スマホ用のナビリスト*/
+
+
+ .hum {
+     display: none;
+     position: fixed;
+     bottom: 15%;
+
+ }
+
+ .fixed_hum {
+     display: none;
+ }
+
+
+
+ /*.hum a {display: none;
+     /* font-weight: bold;*/
+   /*  width: 100%;
+     ;
+     height: 75%;
+     display: inline-block;
+     background-color: #30d5cb;
+     opacity: 0.8;
+     color: white;
+
+ }*/
+
+ .hum a:active {
+     opacity: 0.6;
+ }
+
+ /*スマホ用のナビゲーション部分*/
+ 
+ main {
+     clear: both;
+     display: block;
+
+ }
+
+
+
+ footer {
+     background-image: url(../images/a_common/bg_fotter.png);
+     background-repeat: no-repeat;
+     height: 640px;
+     background-size: cover;
+ }
+
+ .footer_content {
+     text-align: center;
+ }
+
+ footer a:hover {
+     opacity: 0.6;
+ }
+
+ .f_nav {
+     padding-top: 50px;
+     text-align: center;
+     margin-bottom: 30px;
+ }
+
+ .f_nav ul {
+     justify-content: center;
+
+ }
+
+ .f_nav ul li {
+     padding-right: 20px;
+     padding-left: 20px;
+     border-right: 2px solid #000;
+ }
+
+ .f_nav ul li:last-child {
+     border: none;
+ }
+
+
+ .f_nav ul li a {
+     font-weight: bold;
+     font-size: 17px;
+     font-family: '小塚ゴシック Pr6n', 'Kozuka Gothic Pr6n', sans-serif;
+ }
+
+ .sns {
+     width: 200px;
+     margin: 0 auto;
+     padding-bottom: 50px;
+ }
+
+ .sns p {
+     padding-right: 30px;
+ }
+
+ p small {
+     padding-top: 30px;
+ }
+
+ small span {
+     font-family: "hgp明朝b";
+ }
+
+
+
+ .fz20 span {
+     font-size: 60px;
+     margin-bottom: 30px;
+ }
+
+
+
+
+
+
+
+ /* レスポンシブ-------------------------- */
+ @media screen and (max-width:640px) {
+
+     /* リセット */
+     .inner {
+         width: auto;
+     }
+
+     img {
+         max-width: 100%;
+         height: auto;
+     }
+
+     .ds_f {
+         flex-direction: column;
+     }
+
+
+     /* 削除するもの */
+     header .header_address,
+     .fixed_box_frame nav,
+     .f_nav,
+     footer .footer_content .pt40 img,
+     .fixed {
+         display: none;
+     }
+
+
+
+
+     /* header------------------ */
+
+     header {
+         height: auto;
+         margin-bottom: 10px;
+     }
+
+     header .logo_image img {
+         margin: 0;
+         width: 40px;
+         height: 40px;
+     }
+
+     .mt10 {
+         margin: 0;
+     }
+
+     header .logo {
+         padding: 0;
+         padding-top: 10px;
+         padding-left: 5px;
+
+     }
+
+     header .logo span {
+         font-size: 22px;
+     }
+
+     .sp_h {
+         flex-direction: row;
+     }
+
+     /*-スマホ用予約ボタン-*/
+
+     .fixed_yoyaku {z-index: 9999;
+         display: block;
+         padding-left: 5%;
+         position: fixed;
+         bottom: 2%;
+         width: 70%;
+     }
+
+     /*スマホ用ハンバーガーボタン*/
+     .fixed_hum {
+         display: block;
+         position: fixed;
+         bottom: 1%;
+         right: 2%;
+         background: transparent;
+         border: none;
+         cursor: pointer;
+     }
+
+
+     .nav_h {display: block;
+         width: 100%
+     }
+
+     .hum {z-index: 9999;
+        width: 100%;
+         opacity: 0.9;
+         background-color: #30d5cb;
+         display: block;
+         height: 70%;
+         position: fixed;
+         left: 0%;
+         bottom: 12%;
+         display: none;     }
+
+     .hum li {
+         height: 16.6%;
+     }
+
+     .hum a {height: 70%;
+        color: #FFF;
+         padding-left: 3%;
+         padding-top: 6%;
+         font-weight: bolder;
+         display: block;
+
+         width: 100%;
+     }
+
+     /*height: 80PX;/*
+
+         display: block;
+         background-color: #30d5cb;
+         opacity: 0.8;
+         color: white;
+         border-bottom: 1px solid gray;
+     
+
+
+
+     /* footer------------------ */
+     footer {
+         height: auto;
+         padding-bottom: 70px;
+     }
+
+
+     .sns {
+         width: auto;
+         margin: auto;
+         padding: 0;
+         flex-direction: row;
+         justify-content: center;
+         padding-top: 30px;
+         margin-bottom: 30px;
+     }
+
+     .sns img {
+         width: 40px;
+         height: 40px;
+     }
+
+     .sns p {
+         padding-right: 15px;
+     }
+
+     .fz20 {
+         font-size: 15px;
+         margin-bottom: 30px;
+     }
+
+     .fz20 span {
+         font-size: 30px;
+         margin-bottom: 20px;
+     }
+
+     .pt20 {
+         margin: 0;
+     }
+
+     .pt20 a {
+         padding: 5px;
+     }
+
+     .pt40,
+     .pt45 {
+         padding: 0;
+     }
+
+     small {
+         font-size: 10px;
+     }
+
+ }

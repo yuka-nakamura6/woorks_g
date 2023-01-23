@@ -1,0 +1,455 @@
+@charset "UTF-8";
+
+.mv{
+  padding-top: 70px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sp_mv{
+  display: none;
+}
+
+.mv ul{
+	position:relative;
+}
+
+.mv li{
+	position:absolute;
+	width:100%;
+}
+
+
+
+/* jsスライダー---------- */
+#button{
+	padding-top:400px;
+	text-align:center;
+}
+
+#button ul{
+	display:inline-block;
+}
+
+#button ul li{
+	float:left;
+	margin-right:15px;
+}
+
+#button ul li:last-child{
+	margin-right:0;
+}
+
+#button ul li a{
+	text-indent:-9999px;
+	text-decoration:none;
+	display:block;
+	width:14px;
+	height:14px;
+	border-radius:7px;
+	background:#A8DCDB;
+}
+
+#button ul li a.target{
+	background:#41AFAD;
+}
+
+/* ------------------------------ */
+
+
+
+.h2 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: normal;
+  background-image: url(../images/b_top/bg_earth.png);
+  background-repeat: no-repeat;
+  background-position: 80% 30%;
+  height: 600px;
+}
+
+
+.pt80 {
+  padding-top: 180px;
+}
+
+
+/*h3 {
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+}
+
+h3 span {
+  font-size: 18px;
+}
+
+h3 .solid {
+  display: inline-block;
+  border-bottom: 2px solid #1c877f;
+  width: 330px;
+  text-align: center;
+}*/
+
+h3{
+  width: 330px;
+  font-size: 24px;
+  border-bottom: 1px solid #1c877f;
+  display: inline-block;
+}
+
+.h3{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.servise {
+  padding-top: 30px;
+}
+
+.servise section {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  height: 600px;
+  /* padding-left: 65px;*/
+}
+
+.servise section>a:hover{
+  opacity: 0.5;
+}
+
+
+h4 {
+  font-size: 22px;
+  font-weight: normal;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+section p {
+  font-size: 17px;
+
+}
+
+.pt45{
+  padding-top: 30px;
+  /* 
+  
+  font-size: 22px; */
+}
+
+
+section p a:hover {
+  opacity: 0.3;
+}
+
+
+
+.time {
+  padding-top: 130px;
+  text-align: center;
+}
+
+.time h3 p {
+  font-weight: normal;
+  font-size: 38px;
+  text-align: center;
+}
+
+.time{
+  margin-bottom: 130px;
+}
+
+article{
+  margin-bottom: 100px;
+}
+
+article .news{
+  width: 850px;
+  margin: 0 auto;
+  
+}
+
+
+
+article .news .box{
+  box-sizing: border-box;
+  background-image: url(../images/b_top/bg_news.png);
+  background-repeat: no-repeat;
+  height: 284px;
+  width: 400px;
+  padding-top: 50px;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+article .news .box .tarzan{
+  padding-top: 20px;
+}
+
+article .news .box .tarzan p{
+  margin-bottom: 10px;
+}
+
+article .news .tarzan span{
+  font-size: 16px;
+  font-family: "Blackoak Std";
+}
+
+.yamanekotv p span {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.yamanekotv{
+  padding-top: 20px;
+}
+
+.yamanekotv>p{
+  margin-bottom: 30px;
+}
+
+.yamaneko{
+  padding-left: 15px;
+}
+
+
+/*
+aside {
+  padding-top: 150px;
+}
+
+aside .news {
+  padding-left: 55px;
+  width: 830px;
+  margin-bottom: 170px;
+}
+
+aside .news>div{
+  background-image: url(../images/b_top/bg_news.png);
+  background-repeat: no-repeat;
+}
+
+aside .news .yamaneko {
+  background-image: url(../images/b_top/bg_news.png);
+  background-repeat: no-repeat;
+
+}
+
+aside .tarzan span {
+  font-size: 20px;
+  font-family: "Blackoak Std";
+}
+
+aside .news p {
+  font-size: 15px;
+}
+
+.tarzan {
+  padding-top: 50px;
+}
+
+.tarzan .book {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.yamanekotv {
+  padding-top: 50px;
+
+
+}
+
+.yamanekotv p span {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.yamaneko {
+  padding-top: 25px;
+  padding-left: 60px;
+}
+*/
+
+
+
+
+
+
+/* レスポンシブ------------------------- */
+@media screen and (max-width:640px){
+
+
+h1{
+  padding-top: 20px;
+  margin-bottom: 60px;
+
+}
+
+
+h2{
+  font-size: 21px;
+  background-size: contain;
+  background-position: center;
+  height: 200px;
+  margin-bottom: 60px;
+
+}
+
+.pt80{
+  padding-top: 50px;
+}
+
+h3{
+  width: 200px;
+  font-size: 18px;
+}
+
+.h3{
+  margin-bottom: 20px;
+}
+
+.servise {
+  padding-top: 0;
+}
+
+.servise section {
+  width: auto;
+  /* margin: 0 auto; */
+  text-align: center;
+  height: auto;
+  /* padding-left: 65px;*/
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: normal;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section p {
+  font-size: 16px;
+
+}
+
+.pt45{
+  padding-top: 10px;
+}
+
+.pt45 img{
+  width: 150px;
+}
+
+.servise section{
+  width: auto;
+  margin: 0;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.servise section>img{
+  width: 180px;
+  height: 180px;
+}
+
+article .news{
+  width: auto;
+  margin: 0;
+}
+
+.time{
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+
+.pt30{
+  padding: 0;
+  font-size: 13px;
+}
+
+
+article{
+  margin-bottom: 50px;
+}
+
+
+
+article .news .box{
+  width: auto;
+  background-size: contain;
+  padding: 0;
+  background-image: none;
+  /* padding: 30px; */
+  height: auto;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-bottom: 1px dotted #A8DCDB;
+}
+
+
+
+article .news .box .tarzan{
+  font-size: 14px;
+  padding: 0;
+  /*padding-left: 20px;
+  padding-top: 30px;*/
+}
+
+article .news .box .tarzan p{
+  margin: 0;
+}
+
+article .news .tarzan span{
+  font-size: 12px;
+}
+
+/*article .news .box p img{
+  width: 70px;
+  height: 120px;
+}*/
+
+.yamaneko p{
+  font-size: 14px;
+}
+
+.yamanekotv{
+  padding: 0;
+}
+
+.yamanekotv p{
+  margin: 0;
+}
+
+.yamaneko{
+  padding: 0;
+}
+
+article img{
+  display: none;
+}
+
+article br{
+  display: none;
+}
+
+.hp_mv{
+  display: none;
+}
+
+.sp_mv{
+  display: block;
+  margin-bottom: 50px;
+}
+
+.pt90{
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+}

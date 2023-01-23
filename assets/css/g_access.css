@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/*.fixed {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+}*/
+
+main{
+  background-image: url(../images/c_about/bg_nami.png);
+  background-repeat: no-repeat;
+  /*--スクロールをさせるため 高さ指定--*/
+  background-size: cover; /*--背景画像のサイズ--*/
+  background-attachment: fixed; /*--背景画像の固定--*/
+  background-repeat: no-repeat; /*--背景画像の繰り返し--*/
+  background-position: center center;
+  
+}
+
+h1{
+  width: 600px;
+  font-size: 24px;
+  border-bottom: 1px solid #1c877f;
+  display: inline-block;
+  padding-top: 70px;
+}
+
+
+.h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+/*h3 .solid {
+  display: inline-block;
+  width: 330px;
+  text-align: center;
+  border-bottom: 1px solid rgb(28, 135, 127);
+}
+
+h3 {display: block;
+  font-size: 38px;
+  padding-top: 60px;
+  font-weight: normal;
+text-align: center;}
+
+h3 span {
+  font-size: 22px;
+}*/
+
+.reserve{
+  margin-bottom: 30px;
+}
+
+.contact{
+  margin-bottom: 30px;
+}
+
+
+
+.reserve .contact {
+  width: auto;
+  margin: auto;
+}
+#text, #tel, input[type="email"], input[type="text"], input[type="tel"] {
+  width: auto;
+  height: 30px;
+  font-size: 21px;}
+
+.alert {
+  color: red;
+}
+
+
+form {
+  width:auto;
+  margin:0;
+text-align: center;}
+
+p.fz11.pl315.pb20{
+  text-align: center;
+}
+form p {
+  padding-top: 5px;
+}
+form span{color: red;}
+textarea {
+  height: 160px;
+  width: 300px;
+  font-size: 20px;
+  resize: none;
+}
+
+#contact_submit, #submitBtn {
+  background-color: rgb(48, 213, 203);
+  display: block;
+  color: white;
+  margin:auto;
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+}
+
+.gmap {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.access_info{
+padding-bottom: 80px;}
+
+table{
+  margin: auto;
+border-spacing: 0;
+border-collapse: collapse;
+border: 1px solid;}
+
+table tr{
+  border: 1px solid;
+}
+
+
+
+.pt10{
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
+
+.fz11 .pl315 .pb20{
+  text-align: center;
+}
+.gmap{
+    width: 700px;
+    margin: 0 auto;
+  overflow: hidden;
+    padding-bottom: 30px;
+    }
+   
+    .gmap iframe{
+      width: 700px;
+    }
+
+table th{
+  padding: 7px;
+  background-color: #30dec5;
+  color: #fff;
+}
+
+
+
+/*-----レスポンシブ---*/
+
+@media screen and (max-width:640px){
+
+  /*-①テンプレートを書く-*/
+  .inner{
+      width: auto;
+  }
+img{
+  max-width: 100%;/*-最大でも親要素の範囲を超えないように-*/
+  /*-or width;:100%;-*/
+height: auto;/*-画像の比率が崩れないようにどちらかにはautoを-*/}
+
+/*-②いらないものを消す-*/
+.g_nav,.fixed_box_frame,.fixed,.header_address
+{
+  display: none;/*-非表示-*/
+}
+
+/*-3 段組みの解除-*/
+
+
+/*-4 widthの調整-*/
+
+form{
+width: auto;
+}
+
+.fz11 .pl315 .pb20{
+  text-align: center;
+}
+
+
+/*.gmap{
+  width: auto;
+   
+    overflow: hidden;
+   padding-bottom: 56.25%;
+    position: relative;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+    .gmap iframe {
+
+    left: 0;
+    top: 0;
+    height: 100%;
+     width: 100%; 
+    }*/
+ 
+  h1{width: auto;}
+
+  .gmap{
+    width: 90%;
+    text-align: center;
+    height: auto;
+  overflow: hidden;
+    padding-bottom: 20px;
+    }
+
+    .gmap iframe{
+      width: 90%;
+      height: auto;
+    }
+
+
+    h1{
+      font-size: 20px;
+      padding-top: 40px;
+    }
+
+    textarea{
+      width: auto;
+    }
+
+    #contact_submit, #submitBtn{
+      width: auto;
+    }
+
+    main{
+      background-size:contain; /*--背景画像のサイズ--*/
+    }
+
+    }
+    
+
+

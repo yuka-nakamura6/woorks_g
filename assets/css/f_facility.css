@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+main .inner {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 95px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: solid 1px #5d7775;
+    display: inline-block;
+}
+
+body {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/* 追記しました　ゆか */
+main>p {
+    padding-top: 50px;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーー */
+
+.h1 {
+    padding-bottom: 130px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.map {
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+section h2 {
+    background-image: none;
+    border-bottom: solid 1px #5d7775;
+    text-align: center;
+    display: inline;
+
+}
+
+section .h2 {
+    text-align: center;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+
+section.exp {
+    padding-top: 30px;
+}
+
+section .photo {
+    padding-bottom: 110px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+}
+
+.photo {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+/* フェードイン時に入るクラス */
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/*追記　もりやま*/
+@media screen and (max-width:640px) {
+    .inner {
+        width: auto;
+    }
+    .main_visual{padding-top: 0;}
+
+
+    .main_area .content {
+        width: 100%;
+    }
+
+    .fixed_box_frame{
+        display: none;
+    }
+    .fixed{width: 0;}
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    section .ds_f{
+        flex-direction: column;
+        /* 積み重なるように配置 */
+    }
+
+
+    .order1 {
+        order: 1;
+        /*上から1番目に表示*/
+    }
+
+    .order2 {
+        order: 2;
+        /*上から2番目に表示*/
+    }
+
+    .order3{order: 3;}
+
+    .order4{order: 4;}
+
+
+
+    .main_visual{
+        margin-bottom: 50px;
+    }
+
+
+    h1{
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .h1{
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+
+    .map_image{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    .map{
+        padding-bottom: 0;
+    }
+
+    section h2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    section .h2 {
+        margin: 0;
+    }
+
+    section .h2 p{
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    section .photo{
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+
+    /*.ds_f {
+        display: block;
+    }
+
+    .main_visual .catch {
+        font-size: 1.125rem;
+        padding-top: 15px;
+        padding-bottom: 10%;
+        padding-left: 5%;
+    }
+
+    header.btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    .f_area {
+        padding-bottom: 150px;
+        width: 100%;
+    }
+
+    .f_nav {
+        display: none;
+    }*/
+}
