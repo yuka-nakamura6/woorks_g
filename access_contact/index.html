@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>アクセス_お問い合わせ❘YOU整形外科クリニック</title>
+    <link rel="stylesheet" href="../assets/css/a_common.css">
+    <link rel="stylesheet" href="../assets/css/g_access.css">
+    <link rel="icon" href="../favicon2.ico">
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <!--アクセスページ用のスクリプトです-->
+    <script src="../assets/js/script_access.js"></script>
+    <!-- datapicker用 jquery Ui CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- datapicker用 jquery ui js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="inner">
+            <div class="ds_f jc_sb">
+
+                <div class="ds_f sp_h">
+                    <p class="logo_image mt10"><img src="../assets/images/b_top/logo.png" alt="YOU整形外科クリニックのロゴです"></p>
+                    <p class="logo"><span>YOU整形外科クリニック</span></p>
+                </div>
+
+                <p class="header_address"><img src=" ../assets/images/b_top/icon_tel.png " alt="電話番号マークです "><span>
+                        00-0000-0000</span><br> 深沢駅より徒歩４分 <br>（AM）9:00-12:00 （PM）15:00-19:00 </p>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="fixed_box_frame">
+        <div id="fixedBox">
+
+            <nav id="pc_nav">
+                <ul id="menu">
+                    <li id="m01"><a href="../index.html"><span>ホーム</span>
+                            <br>Home</a>
+                    </li>
+                    <li id="m02"><a href="../about/index.html"><span>当院について</span><br>
+                            About
+                        </a></li>
+                    <li id="m03"><a href="../doctor/index.html"><span>ドクター紹介</span>
+                            <br>Doctor</a></li>
+                    <li id="m04"><a href="../content/index.html"><span>診療内容</span>
+                            <br>Service</a>
+                    </li>
+                    <li id="m05"><a href="../facility/index.html"><span>施設紹介</span>
+                            <br>
+                            Facility introduction</a>
+                    </li>
+                    <li id="m06"><a href="#"><span>アクセス/問い合わせ</span>
+                            <br>Access / Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    
+    <!--パソコン用の予約、問い合わせボタン、右に固定する-->
+
+    <p class="fixed"><a href="#"><img src="../assets/images/b_top/btn_yoyaku.png"
+                alt="こちらから予約ができます"></a></p>
+                 <!--スマホ用の予約、問い合わせボタン、下に固定する-->
+    <p class="fixed_yoyaku">
+        <a href="../access_contact/index.html"><img src="../assets/images/a_common/btn_yoyaku_re.png"
+                alt="こちらから予約ができます">
+        </a>
+    </p>
+
+    <nav class="nav_h">
+        <!--スマホ用のメニューボタン-->
+        <button class="fixed_hum"><img src="../assets/images/a_common/btn_hum.png" alt="ハンバーガーボタン"></button>
+        <!--スマホ用のナビゲーションリスト、タップしたら出てくる予定-->
+
+
+        <ul class="hum">
+            <li><a href="../index.html">Top</a></li>
+            <li><a href="../about/index.html">当院について</a></li>
+            <li><a href="../doctor/index.html"><span>医師紹介</span>
+                </a></li>
+            <li><a href="../content/index.html"><span>診療内容</span>
+                </a></li>
+            <li><a href="../facility/index.html"><span>施設紹介</span>
+                </a>
+            </li>
+            <li><a href="../access_contact/index.html"><span>アクセス/問い合わせ</span>
+                </a></li>
+        </ul>
+
+
+    </nav>
+   
+
+    <!--ここまで共通です-->
+
+
+    <main>
+        <div class="inner">
+            <div class="reserve">
+                <section class="form">
+
+                    <div class="h1">
+                        <h1>予約フォーム</h1>
+                        <p>Reserve</p>
+                    </div>
+
+                </section>
+                <div class="form">
+                    <form action="#" method="post">
+
+                        <p>お名前<span>*</span></p>
+                        <div id="textSection">
+                            <input type="text" id="text" name="text" value="">
+                            <p class="alert">※お名前を入力してください。</p>
+                        </div>
+                        <div id="telSection">
+                            <p>電話番号<span>*</span></p>
+                            <input type="tel" id="tel" name="tel" value="">
+                            <p class="alert">※電話番号を入力してください。</p>
+                        </div>
+                        <p>メールアドレス</p>
+                        <input type="email" name="email">
+                        <div id="dateSection">
+                            <p>ご予約日<span>*</span></p>
+                            <input id="datepicker" type="text" placeholder="年月日">
+                            <p class="alert">※ご予約日を選択してください。</p>
+                        </div>
+                        <!--  <label for="time">予定の時刻：</label>
+                    <input type="time" list="data-list" name="予定の時刻" min="06:00" max="07:00" step="1800" /><span></span>-->
+                        <div class="timeSection">
+                            <p>ご予約時間<span>*</span></p>
+                            <select>
+                                <option value="none">----</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="15:00">
+                                    15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                            </select>
+                            <p class="alert">※ご予約時間を選択してください。</p>
+                        </div>
+                        <p>備考入力欄</p>
+                        <p><textarea></textarea></p>
+                        <input type="submit" value="予約確定" id="submitBtn">
+
+                    </form>
+                </div>
+            </div>
+            <div class="contact">
+
+                <div class="h1">
+                    <h1>お問い合わせ</h1>
+                    <p>Contact</p>
+                </div>
+
+
+                <!-- <p class="fz11 pl315 pb20">ご不明な点などございましたら、お気軽にお問い合わせください。<br> </p> -->
+
+
+                <form action="#" method="post">
+                    <div class="contact_name_section">
+                        <p>お名前<span>*</span></p>
+                        <input type="text" name="name" id="contact_name">
+                        <p class="alert">※お名前を入力してください。</p>
+                    </div>
+                    <div class="contact_tel_section">
+                        <p>TEL<span>*</span></p>
+                        <input type="tel" name="tel" id="contact_tel">
+                        <p class="alert">※電話番号を入力してください。</p>
+                    </div>
+                    <div class="contact_email_section">
+                        <p>e-mail<span>*</span></p>
+                        <input type="email" name="email" id="contact_email">
+                        <p class="alert">※メールアドレスを入力してください。</p>
+                    </div>
+                    <div class="contact_section">
+                        <p>お問い合わせ内容<span>*</span></p>
+                        <p><textarea id="textarea"></textarea></p>
+                        <p class="alert">※お問い合わせ内容を入力してください。</p>
+                    </div>
+                    <p><input type="submit" value="送信" id="contact_submit"></p>
+                </form>
+                <!-- お問い合わせ内容のdiv閉じ -->
+            </div>
+
+
+            <div id="map">
+                <div class="h1">
+                    <h1>アクセス</h1>
+                    <p>Access</p>
+                </div>
+
+
+                <div class="gmap"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5162.600216150725!2d139.6516614424606!3d35.631298424999315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f48e4dd2831f%3A0xba8eff72506be8da!2z44CSMTU0LTAwMTIg5p2x5Lqs6YO95LiW55Sw6LC35Yy66aeS5rKi77yR5LiB55uu77yR77yV!5e0!3m2!1sja!2sjp!4v1664873274283!5m2!1sja!2sjp"
+                        width="500" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+
+                <div class="access_info">
+                    <table>
+
+                        <tr>
+                            <th>住所</th>
+                            <td>
+                                〒000-0000
+                                東京都世田谷区深沢1-2-3
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>最寄り駅</th>
+                            <td class="pl20"> 「深沢駅」より徒歩４分。</td>
+                        </tr>
+                    </table>
+
+
+                    <p class="pt10">※駐車場はございません。近隣のコインパーキングをご利用ください。</p>
+                </div>
+
+                <!-- 交通情報のdiv閉じ -->
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="f_nav inner">
+            <ul class="ds_f">
+                <li><a href="../index.html">ホーム</a>
+                </li>
+                <li><a href="../about/index.html">当院について</a>
+                </li>
+                <li><a href="../doctor/index.html">ドクター紹介</a>
+                </li>
+                <li><a href="../content/index.html">診療内容</a>
+                </li>
+                <li><a href="../facility/index.html">施設紹介</a>
+                </li>
+                <li>
+                    <a href="../access_contact/index.html#map">アクセス</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer_content">
+            <div class="sns ds_f jc_sb">
+                <p><a href="#"><img src="../assets/images/b_top/icon_twitter.png" alt="ツイッターです"></a></p>
+                <p><a href="#"><img src="../assets/images/b_top/icon_insta.png" alt="インスタグラムです"></a></p>
+            </div>
+            <div class="fz20">
+                <p>お気軽にお問い合わせください。<br>
+                    <span>✆ 00-0000-0000</span><br>
+                    〒東京都世田谷区深沢1-2-3
+                </p>
+            </div>
+            <p class="pt20">
+                <a href="../access_contact/index.html#map">
+                    アクセスマップはこちら
+                </a>
+            </p>
+            <p class="pt40 pb20"><img src="../assets/images/b_top/logo.png" alt="YOU整形外科のロゴです"></p>
+            <p><small><span>Copyright</span>&copy;2022</small></p>
+        </div>
+    </footer>
+
+
+
+    <!-- wrap閉じ -->
+
+
+
+</body>
+
+</html>
